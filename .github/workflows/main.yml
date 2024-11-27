@@ -34,10 +34,6 @@ jobs:
         cp dist/yt-ul* yt-ul
         tar -czvf linux-x64.tar.gz yt-ul
 
-    - name: Compressing
-      run: |
-        tar -czvf linux-x64.tar.gz ttlr
-
     - name: Upload Release
       uses: softprops/action-gh-release@v1
       with:
